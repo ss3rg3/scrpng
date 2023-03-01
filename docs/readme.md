@@ -2,6 +2,10 @@
 
 # CSS selectors
 
+
+
+## Helpers
+
 - :exclamation: [Visual examples](https://www.w3schools.com/cssref/trysel.php)
 
 - [Complex selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector#complex_selectors), note that you can chain these things:
@@ -10,7 +14,24 @@
   document.querySelector("div.user-panel.main input[name='login']");
   ```
 
-  
+
+
+
+## Dealing with tables
+
+Best is to select the `<tr>`'s and pick the `:nth-child` of whatever cell you need.
+
+```python
+for tr in response.css("table.table-sm tr"):
+    if tr.css("td:nth-child(1) a::text").get() is None:
+        continue
+    yield {
+        "category": tr.css("td:nth-child(1) a::text").get(),
+        "sites": tr.css("td:nth-child(2) a::text").get()
+    }
+```
+
+
 
 # Scrapy
 
@@ -46,8 +67,8 @@ scrapy crawl homepage	# name of spider
 Output to JSON or CSV:
 
 ```
-scrapy crawl bookstore -O output2.json
-scrapy crawl bookstore -O output2.csv
+scrapy crawl bookstore -O output.json
+scrapy crawl bookstore -O output.csv
 ```
 
 
@@ -146,6 +167,59 @@ class BookStoreSpider(scrapy.Spider):
 ```
 
 
+## Cookbook
+
+### Import classes & utils
+
+Importing classes as usual doesn't seem to work. Instead, you have to have a wrapper file and import a classes from there. This is used for models, but seems to work with utils as well.
+
+Create a class where the `middlewares.py` and other files are, e.g. `scrapy/bltwth/bltwth/utils.py`
+
+```python
+from pathlib import Path
+import scrapy
+
+class FileUtils(scrapy.Item):
+
+    @staticmethod
+    def loadFileAsString(path: Path) -> str:
+        with open(path) as file:
+            try:
+                return file.read().strip()
+            except Exception as e:
+                raise e
+```
+
+Then inside your spider you can import it like this:
+
+```python
+from ..utils import FileUtils
+
+class TechSpider(scrapy.Spider):
+    urlsJson = FileUtils.loadFileAsString(Path("categories.json"))
+```
+
+The project root of the crawler is where the `scrapy.cfg` file is.
+
+
+
+### Sleep between requests
+
+In `settings.py`:
+
+```
+DOWNLOAD_DELAY = 3
+```
+
+
+
+### Disable obeying robots.txt
+
+In `settings.py`:
+
+```
+ROBOTSTXT_OBEY = False
+```
 
 
 

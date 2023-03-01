@@ -1,0 +1,754 @@
+{
+  "https://trends.builtwith.com/ads/ad-analytics": {
+    "cat": "Ad Analytics",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/ad-blocking": {
+    "cat": "Ad Blocking",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/ad-exchange": {
+    "cat": "Ad Exchange",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/ad-network": {
+    "cat": "Ad Network",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/ad-server": {
+    "cat": "Ad Server",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/ads-txt": {
+    "cat": "ads txt",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/adult": {
+    "cat": "Adult",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/affiliate-programs": {
+    "cat": "Affiliate Programs",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/audience-targeting": {
+    "cat": "Audience Targeting",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/bitcoin": {
+    "cat": "Bitcoin",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/content-curation": {
+    "cat": "Content Curation",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/contextual-advertising": {
+    "cat": "Contextual Advertising",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/data-management-platform": {
+    "cat": "Data Management Platform",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/demand-side-platform": {
+    "cat": "Demand-side Platform",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/digital-video-ads": {
+    "cat": "Digital Video Ads",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/dynamic-creative-optimization": {
+    "cat": "Dynamic Creative Optimization",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/fraud-prevention": {
+    "cat": "Fraud Prevention",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/header-bidding": {
+    "cat": "Header Bidding",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/local-ads": {
+    "cat": "Local Ads",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/mobile": {
+    "cat": "Mobile",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/multi-channel": {
+    "cat": "Multi-Channel",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/retargeting---remarketing": {
+    "cat": "Retargeting / Remarketing",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/ads/search": {
+    "cat": "Search",
+    "group": "Advertising"
+  },
+  "https://trends.builtwith.com/analytics/a-b-testing": {
+    "cat": "A/B Testing",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/advertiser-tracking": {
+    "cat": "Advertiser Tracking",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/application-performance": {
+    "cat": "Application Performance",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/audience-measurement": {
+    "cat": "Audience Measurement",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/call-tracking": {
+    "cat": "Call Tracking",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/cart-abandonment": {
+    "cat": "Cart Abandonment",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/conversion-optimization": {
+    "cat": "Conversion Optimization",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/conversion-tracking": {
+    "cat": "Conversion Tracking",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/crm": {
+    "cat": "CRM",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/customer-data-platform": {
+    "cat": "Customer Data Platform",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/data-management-platform": {
+    "cat": "Data Management Platform",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/error-tracking": {
+    "cat": "Error Tracking",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/feedback-forms-and-surveys": {
+    "cat": "Feedback Forms and Surveys",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/fraud-prevention": {
+    "cat": "Fraud Prevention",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/lead-generation": {
+    "cat": "Lead Generation",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/marketing-automation": {
+    "cat": "Marketing Automation",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/mobile": {
+    "cat": "Mobile",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/personalization": {
+    "cat": "Personalization",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/product-recommendations": {
+    "cat": "Product Recommendations",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/real-estate": {
+    "cat": "Real Estate",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/retargeting---remarketing": {
+    "cat": "Retargeting / Remarketing",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/site-optimization": {
+    "cat": "Site Optimization",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/social-management": {
+    "cat": "Social Management",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/tag-management": {
+    "cat": "Tag Management",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/analytics/visitor-count-tracking": {
+    "cat": "Visitor Count Tracking",
+    "group": "Analytics and Tracking"
+  },
+  "https://trends.builtwith.com/media/digital-video-ads": {
+    "cat": "Digital Video Ads",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/enterprise": {
+    "cat": "Enterprise",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/live-stream---webcast": {
+    "cat": "Live Stream / Webcast",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/online-video-platform": {
+    "cat": "Online Video Platform",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/social-video-platform": {
+    "cat": "Social Video Platform",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/video-analytics": {
+    "cat": "Video Analytics",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/media/video-players": {
+    "cat": "Video Players",
+    "group": "Audio / Video Media"
+  },
+  "https://trends.builtwith.com/cms/agency": {
+    "cat": "Agency",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/automotive": {
+    "cat": "Automotive",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/blog": {
+    "cat": "Blog",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/community-cms": {
+    "cat": "Community CMS",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/ecommerce-enabled": {
+    "cat": "eCommerce Enabled",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/enterprise": {
+    "cat": "Enterprise",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/financial": {
+    "cat": "Financial",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/forum-software": {
+    "cat": "Forum Software",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/headless": {
+    "cat": "Headless",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/healthcare": {
+    "cat": "Healthcare",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/hosted-solution": {
+    "cat": "Hosted Solution",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/job-board": {
+    "cat": "Job Board",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/landing-page": {
+    "cat": "Landing Page",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/learning-management-system": {
+    "cat": "Learning Management System",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/mobile": {
+    "cat": "Mobile",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/non-profit": {
+    "cat": "Non Profit",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/open-source": {
+    "cat": "Open Source",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/real-estate": {
+    "cat": "Real Estate",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/simple-website-builder": {
+    "cat": "Simple Website Builder",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/social-management": {
+    "cat": "Social Management",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/ticketing-system": {
+    "cat": "Ticketing System",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/cms/wiki": {
+    "cat": "Wiki",
+    "group": "Content Management System"
+  },
+  "https://trends.builtwith.com/docinfo/mobile-specific": {
+    "cat": "Mobile Specific",
+    "group": "Document Standards"
+  },
+  "https://trends.builtwith.com/shop/agency": {
+    "cat": "Agency",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/automotive": {
+    "cat": "Automotive",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/enterprise": {
+    "cat": "Enterprise",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/hosted-solution": {
+    "cat": "Hosted Solution",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/multi-channel": {
+    "cat": "Multi-Channel",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/non-platform": {
+    "cat": "Non Platform",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/open-source": {
+    "cat": "Open Source",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/plugin---module": {
+    "cat": "Plugin / Module",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/shipping-provider": {
+    "cat": "Shipping Provider",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/shopify-app": {
+    "cat": "Shopify App",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/shopify-theme": {
+    "cat": "Shopify Theme",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/smb-solution": {
+    "cat": "SMB Solution",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/shop/woocommerce-extension": {
+    "cat": "WooCommerce Extension",
+    "group": "eCommerce"
+  },
+  "https://trends.builtwith.com/mx/business-email-hosting": {
+    "cat": "Business Email Hosting",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/campaign-management": {
+    "cat": "Campaign Management",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/dmarc": {
+    "cat": "DMARC",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/marketing-platform": {
+    "cat": "Marketing Platform",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/secure-email": {
+    "cat": "Secure Email",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/transactional-email": {
+    "cat": "Transactional Email",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/mx/web-hosting-provider-email": {
+    "cat": "Web Hosting Provider Email",
+    "group": "Email Hosting Providers"
+  },
+  "https://trends.builtwith.com/framework/magento-theme": {
+    "cat": "Magento Theme",
+    "group": "Frameworks"
+  },
+  "https://trends.builtwith.com/framework/nodejs": {
+    "cat": "NodeJS",
+    "group": "Frameworks"
+  },
+  "https://trends.builtwith.com/framework/schema": {
+    "cat": "Schema",
+    "group": "Frameworks"
+  },
+  "https://trends.builtwith.com/framework/wordpress-theme": {
+    "cat": "WordPress Theme",
+    "group": "Frameworks"
+  },
+  "https://trends.builtwith.com/javascript/animation": {
+    "cat": "Animation",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/charting": {
+    "cat": "Charting",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/compatibility": {
+    "cat": "Compatibility",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/fingerprinting": {
+    "cat": "fingerprinting",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/framework": {
+    "cat": "Framework",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/javascript-library": {
+    "cat": "JavaScript Library",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/jquery-plugin": {
+    "cat": "jQuery Plugin",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/slider": {
+    "cat": "Slider",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/javascript/ui": {
+    "cat": "UI",
+    "group": "JavaScript Libraries and Functions"
+  },
+  "https://trends.builtwith.com/mapping/maps": {
+    "cat": "Maps",
+    "group": "Mapping"
+  },
+  "https://trends.builtwith.com/ns/enterprise-dns": {
+    "cat": "Enterprise DNS",
+    "group": "Name Server"
+  },
+  "https://trends.builtwith.com/ns/tld-redirects": {
+    "cat": "TLD Redirects",
+    "group": "Name Server"
+  },
+  "https://trends.builtwith.com/server/module": {
+    "cat": "Module",
+    "group": "Operating Systems and Servers"
+  },
+  "https://trends.builtwith.com/payment/bitcoin": {
+    "cat": "Bitcoin",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/checkout-buttons": {
+    "cat": "Checkout Buttons",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/currency": {
+    "cat": "Currency",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/donation": {
+    "cat": "Donation",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/pay-later": {
+    "cat": "Pay Later",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/payment-acceptance": {
+    "cat": "Payment Acceptance",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/payment/payments-processor": {
+    "cat": "Payments Processor",
+    "group": "Payment"
+  },
+  "https://trends.builtwith.com/ssl/extended-validation": {
+    "cat": "Extended Validation",
+    "group": "SSL Certificates"
+  },
+  "https://trends.builtwith.com/ssl/root-authority": {
+    "cat": "Root Authority",
+    "group": "SSL Certificates"
+  },
+  "https://trends.builtwith.com/ssl/wildcard": {
+    "cat": "Wildcard",
+    "group": "SSL Certificates"
+  },
+  "https://trends.builtwith.com/cdns/edge-delivery-network": {
+    "cat": "Edge Delivery Network",
+    "group": "Verified CDN"
+  },
+  "https://trends.builtwith.com/link/adult": {
+    "cat": "Adult",
+    "group": "Verified Link"
+  },
+  "https://trends.builtwith.com/hosting/australian-hosting": {
+    "cat": "Australian hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/canadian-hosting": {
+    "cat": "Canadian hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/chinese-hosting": {
+    "cat": "Chinese hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/cloud-hosting": {
+    "cat": "Cloud Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/cloud-paas": {
+    "cat": "Cloud PaaS",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/czech-hosting": {
+    "cat": "Czech hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/dedicated-hosting": {
+    "cat": "Dedicated Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/dutch-hosting": {
+    "cat": "Dutch hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/ecommerce-hosting": {
+    "cat": "eCommerce Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/french-hosting": {
+    "cat": "French hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/german-hosting": {
+    "cat": "German hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/hong-kong-hosting": {
+    "cat": "Hong Kong hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/italian-hosting": {
+    "cat": "Italian hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/japan-hosting": {
+    "cat": "Japan hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/polish-hosting": {
+    "cat": "Polish hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/romanian-hosting": {
+    "cat": "Romanian hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/russian-hosting": {
+    "cat": "Russian hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/shared-hosting": {
+    "cat": "Shared Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/spanish-hosting": {
+    "cat": "Spanish hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/swedish-hosting": {
+    "cat": "Swedish hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/swiss-hosting": {
+    "cat": "Swiss hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/turkish-hosting": {
+    "cat": "Turkish hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/uk-hosting": {
+    "cat": "UK hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/us-hosting": {
+    "cat": "US hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/vps-hosting": {
+    "cat": "VPS Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/hosting/wordpress-hosting": {
+    "cat": "WordPress Hosting",
+    "group": "Web Hosting Providers"
+  },
+  "https://trends.builtwith.com/web-server/linux-web-server": {
+    "cat": "Linux Web Server",
+    "group": "Web Servers"
+  },
+  "https://trends.builtwith.com/web-server/varnish-server": {
+    "cat": "Varnish Server",
+    "group": "Web Servers"
+  },
+  "https://trends.builtwith.com/widgets/bookings": {
+    "cat": "Bookings",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/bookmarking": {
+    "cat": "Bookmarking",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/call-tracking": {
+    "cat": "Call Tracking",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/captcha": {
+    "cat": "CAPTCHA",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/charting": {
+    "cat": "Charting",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/cobrowsing": {
+    "cat": "Cobrowsing",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/comment-system": {
+    "cat": "Comment System",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/content-modification": {
+    "cat": "Content Modification",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/ecommerce": {
+    "cat": "eCommerce",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/error-tracking": {
+    "cat": "Error Tracking",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/feedback-forms-and-surveys": {
+    "cat": "Feedback Forms and Surveys",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/financial": {
+    "cat": "Financial",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/fonts": {
+    "cat": "Fonts",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/image-provider": {
+    "cat": "Image Provider",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/joomla-module": {
+    "cat": "Joomla Module",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/live-chat": {
+    "cat": "Live Chat",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/login": {
+    "cat": "Login",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/marketing-automation": {
+    "cat": "Marketing Automation",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/mobile": {
+    "cat": "Mobile",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/privacy-compliance": {
+    "cat": "Privacy Compliance",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/push-notifications": {
+    "cat": "Push Notifications",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/schedule-management": {
+    "cat": "Schedule Management",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/site-search": {
+    "cat": "Site Search",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/social-sharing": {
+    "cat": "Social Sharing",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/ssl-seals": {
+    "cat": "SSL Seals",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/tag-management": {
+    "cat": "Tag Management",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/ticketing-system": {
+    "cat": "Ticketing System",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/tour-site-demo": {
+    "cat": "Tour Site Demo",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/translation": {
+    "cat": "Translation",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/vat-registration": {
+    "cat": "VAT Registration",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/web-badge": {
+    "cat": "Web Badge",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/wix-app": {
+    "cat": "Wix App",
+    "group": "Widgets"
+  },
+  "https://trends.builtwith.com/widgets/wordpress-plugins": {
+    "cat": "WordPress Plugins",
+    "group": "Widgets"
+  }
+}

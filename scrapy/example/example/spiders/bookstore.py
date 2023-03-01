@@ -1,5 +1,6 @@
+from scrapy.http.response import Response
+
 import scrapy
-from scrapy.http import HtmlResponse
 
 
 class BookStoreSpider(scrapy.Spider):
@@ -8,7 +9,7 @@ class BookStoreSpider(scrapy.Spider):
 
     baseUrl = "https://books.toscrape.com"
 
-    def parse(self, response: HtmlResponse, **kwargs):
+    def parse(self, response: Response, **kwargs):
         for product in response.css("article.product_pod"):
             yield {
                 'title': product.css("h3 a")[0].attrib["title"],
