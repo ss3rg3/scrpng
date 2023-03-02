@@ -14,6 +14,8 @@
   document.querySelector("div.user-panel.main input[name='login']");
   ```
 
+- [SelectorGadget Chrome extension](https://selectorgadget.com/)
+
 
 
 
