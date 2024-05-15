@@ -8,6 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v124.network.Network;
+import org.openqa.selenium.devtools.v124.network.model.RequestId;
+import org.openqa.selenium.devtools.v124.network.model.RequestWillBeSent;
+import org.openqa.selenium.devtools.v124.network.model.Response;
+import org.openqa.selenium.devtools.v124.network.model.ResponseReceived;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -136,15 +140,29 @@ public class WebDriverUtils {
      * This adds a listener to record the HTTP URL of each request. Note that you need an open DevTools session.
      * Afterward, you should close the session with `devTools.close()` before navigating to another page.
      */
-    public static Set<String> addListenerToRecordXhrRequests(DevTools devToolsWithOpenSession) {
+    public static Map<String, RequestWillBeSent> addListenerToRecordXhrRequests(DevTools devToolsWithOpenSession) {
         devToolsWithOpenSession.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
-        Set<String> requestUrls = new HashSet<>();
-        devToolsWithOpenSession.addListener(Network.requestWillBeSent(), handler -> {
-            if (handler.getRequest().getUrl().startsWith("http")) {
-                requestUrls.add(handler.getRequest().getUrl());
+        Map<String, RequestWillBeSent> requestWillBeSents = new LinkedHashMap<>();
+        devToolsWithOpenSession.addListener(Network.requestWillBeSent(), requestWillBeSent -> {
+            if (requestWillBeSent.getRequest().getUrl().startsWith("http")) {
+                requestWillBeSents.put(requestWillBeSent.getRequestId().toString(), requestWillBeSent);
             }
         });
-        return requestUrls;
+        return requestWillBeSents;
     }
+
+    public static Map<String, ResponseReceived> addListenerToRecordXhrResponses(DevTools devToolsWithOpenSession) {
+        devToolsWithOpenSession.send(Network.enable(Optional.empty(), Optional.empty(), Optional.empty()));
+        Map<String, ResponseReceived> responsesReceived = new LinkedHashMap<>();
+
+        devToolsWithOpenSession.addListener(Network.responseReceived(), response -> {
+            Response receivedResponse = response.getResponse();
+            if (receivedResponse.getUrl().startsWith("http")) {
+                responsesReceived.put(response.getRequestId().toJson(), response);
+            }
+        });
+        return responsesReceived;
+    }
+
 
 }
