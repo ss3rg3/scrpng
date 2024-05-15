@@ -11,8 +11,10 @@ import org.openqa.selenium.devtools.v124.network.model.ResponseReceived;
 import java.io.File;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class CdpExtractXhrRequests {
 
@@ -58,8 +60,9 @@ public class CdpExtractXhrRequests {
     }
 
     public static class XhrRequest {
-        private String requestUrl;
-        private int status;
+        private final String requestUrl;
+        private final int status;
+        private final Map<String, List<String>> headersMap;
 
         /**
          * Properly correlated request and response
@@ -67,6 +70,25 @@ public class CdpExtractXhrRequests {
         public XhrRequest(RequestWillBeSent requestWillBeSent, ResponseReceived responseReceived) {
             this.requestUrl = requestWillBeSent.getRequest().getUrl();
             this.status = responseReceived.getResponse().getStatus();
+
+            // Convert headers to proper format
+            Map<String, List<String>> headersMap = new HashMap<>();
+            Map<String, Object> headersMapObject = responseReceived.getResponse().getHeaders().toJson();
+            for (Map.Entry<String, Object> entry : headersMapObject.entrySet()) {
+                String key = entry.getKey();
+                Object value = entry.getValue();
+                if (value instanceof String) {
+                    headersMap.put(key, List.of((String) value));
+                } else if (value instanceof List) {
+                    List<String> valueList = ((List<?>) value).stream()
+                            .map(Object::toString)
+                            .collect(Collectors.toList());
+                    headersMap.put(key, valueList);
+                } else {
+                    headersMap.put(key, List.of(value.toString()));
+                }
+            }
+            this.headersMap = headersMap;
         }
 
         /**
@@ -75,6 +97,7 @@ public class CdpExtractXhrRequests {
         public XhrRequest(RequestWillBeSent requestWillBeSent) {
             this.requestUrl = requestWillBeSent.getRequest().getUrl();
             this.status = 0;
+            this.headersMap = new HashMap<>();
         }
 
         public String getRequestUrl() {
@@ -83,6 +106,10 @@ public class CdpExtractXhrRequests {
 
         public int getStatus() {
             return status;
+        }
+
+        public Map<String, List<String>> getHeadersMap() {
+            return headersMap;
         }
     }
 
