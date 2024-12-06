@@ -1,4 +1,4 @@
-Note that you the following:
+Note that you need the following:
 
 1. The Chromium binaries (Chrome is only available as `deb` package, but works as well)
 2. An edited ChromeDriver (names of `cdc_*` variables replaced)

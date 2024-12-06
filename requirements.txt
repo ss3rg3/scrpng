@@ -3,3 +3,8 @@ attrs
 pathlib
 pydantic
 cloudscraper
+nodriver
+asyncio
+beautifulsoup4
+tls-client
+requests
