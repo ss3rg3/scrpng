@@ -29,10 +29,10 @@ public class WebDriverUtils {
     }
 
     public static ChromeOptions defaultOptionsWithBiDi(boolean shouldUseHeadless) {
-        System.setProperty("webdriver.chrome.driver", "/home/cc/Desktop/_trash/selenium/chromedriver_linux64/chromedriver_copy");
+        System.setProperty("webdriver.chrome.driver", "/media/cc/backup/_trash/selenium/chromedriver_linux64/chromedriver_copy");
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("/home/cc/Desktop/_trash/selenium/chrome-linux/chrome");
+        options.setBinary("/media/cc/backup/_trash/selenium/chrome-linux/chrome");
         options.setCapability("webSocketUrl", true);
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.setExperimentalOption("useAutomationExtension", null);
@@ -49,10 +49,10 @@ public class WebDriverUtils {
     }
 
     public static ChromeOptions defaultOptions(boolean shouldUseHeadless) {
-        System.setProperty("webdriver.chrome.driver", "/home/cc/Desktop/_trash/selenium/chromedriver_linux64/chromedriver_copy");
+        System.setProperty("webdriver.chrome.driver", "/media/cc/backup/_trash/selenium/chromedriver_linux64/chromedriver_copy");
 
         ChromeOptions options = new ChromeOptions();
-        options.setBinary("/home/cc/Desktop/_trash/selenium/chrome-linux/chrome");
+        options.setBinary("/media/cc/backup/_trash/selenium/chrome-linux/chrome");
         options.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
         options.setExperimentalOption("useAutomationExtension", null);
         options.addArguments("--no-sandbox");
@@ -75,7 +75,7 @@ public class WebDriverUtils {
 
     public static void BiDiPreloadStealthJS(WebDriver driver) {
         try {
-            String code = Files.readString(Paths.get("/home/cc/Desktop/_trash/stealth/stealth.min.js"));
+            String code = Files.readString(Paths.get("/media/cc/backup/_trash/selenium/stealth.min.js"));
             try (Script script = new Script(driver)) {
                 script.addPreloadScript("() => { " + code + " }");
             }
@@ -86,7 +86,7 @@ public class WebDriverUtils {
 
     public static void cdpPreloadStealthJS(ChromeDriver driver) {
         try {
-            String code = Files.readString(Paths.get("/home/cc/Desktop/_trash/selenium/stealth.min.js"));
+            String code = Files.readString(Paths.get("/media/cc/backup/_trash/selenium/stealth.min.js"));
             Map<String, Object> params = new HashMap<>();
             params.put("source", code);
             driver.executeCdpCommand("Page.addScriptToEvaluateOnNewDocument", params);

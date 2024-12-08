@@ -21,8 +21,8 @@ public class CdpExtractXhrRequests {
     public static void main(String[] args) throws Exception {
 
         ChromeOptions options = WebDriverUtils.defaultOptions(false);
-//        options.addExtensions(new File("/home/cc/Desktop/_trash/selenium/ublock/ublock.crx"));
-//        options.addArguments("--user-data-dir=/home/cc/Desktop/_trash/selenium/Default");
+//        options.addExtensions(new File("/media/cc/backup/_trash/selenium/ublock/ublock.crx"));
+//        options.addArguments("--user-data-dir=/media/cc/backup/_trash/selenium/Default");
         ChromeDriver driver = new ChromeDriver(options);
 
         DevTools devTools = driver.getDevTools();
@@ -31,7 +31,7 @@ public class CdpExtractXhrRequests {
         Map<String, ResponseReceived> responses = WebDriverUtils.addListenerToRecordXhrResponses(devTools);
 
         Instant start = Instant.now();
-        driver.navigate().to("https://www.seokratie.de");
+        driver.navigate().to("http://seokratie.de");
 
         Thread.sleep(100);
         List<XhrRequest> xhrRequests = compileXhrRequests(requests, responses);

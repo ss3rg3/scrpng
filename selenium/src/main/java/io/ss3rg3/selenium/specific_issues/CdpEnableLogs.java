@@ -12,10 +12,10 @@ public class CdpEnableLogs {
     public static void main(String[] args) throws Exception {
 
         ChromeOptions options = new ChromeOptions();
-        System.setProperty("webdriver.chrome.driver", "/home/cc/Desktop/_trash/selenium/chromedriver_linux64/chromedriver_copy");
-        options.setBinary("/home/cc/Desktop/_trash/selenium/chrome-linux/chrome");
-        options.addExtensions(new File("/home/cc/Desktop/_trash/selenium/ublock/ublock.crx"));
-        options.addArguments("--user-data-dir=/home/cc/Desktop/_trash/selenium/Default");
+        System.setProperty("webdriver.chrome.driver", "/media/cc/backup/_trash/selenium/chromedriver_linux64/chromedriver_copy");
+        options.setBinary("/media/cc/backup/_trash/selenium/chrome-linux/chrome");
+        options.addExtensions(new File("/media/cc/backup/_trash/selenium/ublock/ublock.crx"));
+        options.addArguments("--user-data-dir=/media/cc/backup/_trash/selenium/Default");
 
         ChromeDriver driver = new ChromeDriver(options);
         DevTools devTools = driver.getDevTools();
