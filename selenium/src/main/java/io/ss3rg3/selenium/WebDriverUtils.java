@@ -74,14 +74,15 @@ public class WebDriverUtils {
     }
 
     public static void BiDiPreloadStealthJS(WebDriver driver) {
-        try {
-            String code = Files.readString(Paths.get("/media/cc/backup/_trash/selenium/stealth.min.js"));
-            try (Script script = new Script(driver)) {
-                script.addPreloadScript("() => { " + code + " }");
-            }
-        } catch (IOException e) {
-            throw new IllegalStateException(e);
-        }
+        throw new IllegalStateException("Don't use. Development is suspended ( https://github.com/ariya/phantomjs/issues/15344 ) and it doesn't do anything");
+//        try {
+//            String code = Files.readString(Paths.get("/media/cc/backup/_trash/selenium/stealth.min.js"));
+//            try (Script script = new Script(driver)) {
+//                script.addPreloadScript("() => { " + code + " }");
+//            }
+//        } catch (IOException e) {
+//            throw new IllegalStateException(e);
+//        }
     }
 
     public static void cdpPreloadStealthJS(ChromeDriver driver) {
