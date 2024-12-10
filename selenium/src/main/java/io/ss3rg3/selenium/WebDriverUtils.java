@@ -1,6 +1,8 @@
 package io.ss3rg3.selenium;
 
 import org.openqa.selenium.Dimension;
+import org.openqa.selenium.Proxy;
+import org.openqa.selenium.Proxy.ProxyType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.bidi.module.LogInspector;
 import org.openqa.selenium.bidi.module.Script;
@@ -28,7 +30,7 @@ public class WebDriverUtils {
         return driver.getPageSource();
     }
 
-    public static ChromeOptions defaultOptionsWithBiDi(boolean shouldUseHeadless) {
+    public static ChromeOptions defaultOptionsWithBiDi(boolean shouldUseHeadless, String proxyIpColonPort) {
         System.setProperty("webdriver.chrome.driver", "/media/cc/backup/_trash/selenium/chromedriver_linux64/chromedriver_copy");
 
         ChromeOptions options = new ChromeOptions();
@@ -45,7 +47,16 @@ public class WebDriverUtils {
         if (shouldUseHeadless) {
             options.addArguments("--headless");
         }
+
+        if (proxyIpColonPort != null) {
+            options.addArguments("--proxy-server=http://" + proxyIpColonPort);
+        }
+
         return options;
+    }
+
+    public static ChromeOptions defaultOptionsWithBiDi(boolean shouldUseHeadless) {
+        return defaultOptionsWithBiDi(shouldUseHeadless, null);
     }
 
     public static ChromeOptions defaultOptions(boolean shouldUseHeadless) {

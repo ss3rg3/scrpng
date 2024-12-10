@@ -1,5 +1,8 @@
 package io.ss3rg3.selenium;
 
+import org.openqa.selenium.Proxy;
+import org.openqa.selenium.Proxy.ProxyType;
+import org.openqa.selenium.UsernameAndPassword;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.nio.file.Files;
@@ -11,20 +14,24 @@ class FullSetup {
     public static void main(String[] args) throws Exception {
 
         boolean shouldUseHeadless = false;
-        ChromeDriver driver = new ChromeDriver(WebDriverUtils.defaultOptionsWithBiDi(shouldUseHeadless));
+
+        ChromeDriver driver = new ChromeDriver(WebDriverUtils.defaultOptionsWithBiDi(shouldUseHeadless, "107.172.163.27:6543"));
         WebDriverUtils.BiDiEnableLogging(driver);
-        WebDriverUtils.BiDiPreloadStealthJS(driver);
+        driver.register(UsernameAndPassword.of("clproxyuser", "b3ff6bf2b78e07"));
 
 
 //            driver.get("https://www.cyberport.de");
-        driver.get("https://www.example.com");
+//        driver.get("https://ipapi.co/");
+        driver.get("http://cyberport.de/");
+//        driver.get("https://whatismyipaddress.com/");
+//        driver.get("https://www.linkedin.com/company/techflex-inc-");
 //            driver.get("https://4chan.org/");
 //            driver.get("https://nowsecure.nl/");
 //            driver.get("https://abrahamjuliot.github.io/creepjs/");
 //            driver.get("https://bot.sannysoft.com/");
 
 
-        String html = WebDriverUtils.getHtmlAfterDuration(1000, driver);
+        String html = WebDriverUtils.getHtmlAfterDuration(10000, driver);
         Files.writeString(
                 Paths.get("/tmp/result.html"),
                 html,
