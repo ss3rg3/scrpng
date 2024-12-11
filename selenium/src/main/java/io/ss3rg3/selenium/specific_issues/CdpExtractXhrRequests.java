@@ -1,14 +1,13 @@
 package io.ss3rg3.selenium.specific_issues;
 
+import io.ss3rg3.selenium.ChromeOptionsBuilder;
 import io.ss3rg3.selenium.WebDriverUtils;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v124.network.model.RequestId;
 import org.openqa.selenium.devtools.v124.network.model.RequestWillBeSent;
 import org.openqa.selenium.devtools.v124.network.model.ResponseReceived;
 
-import java.io.File;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -16,13 +15,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * This will extract XHR requests and responses from a page. These are all requests being made in the exact order.
+ * So the first request is the initial request to the requested URL. It's the only way to extract status codes and such.
+ */
 public class CdpExtractXhrRequests {
 
     public static void main(String[] args) throws Exception {
 
-        ChromeOptions options = WebDriverUtils.defaultOptions(false);
-//        options.addExtensions(new File("/media/cc/backup/_trash/selenium/ublock/ublock.crx"));
-//        options.addArguments("--user-data-dir=/media/cc/backup/_trash/selenium/Default");
+        ChromeOptions options = new ChromeOptionsBuilder().build();
         ChromeDriver driver = new ChromeDriver(options);
 
         DevTools devTools = driver.getDevTools();
@@ -101,15 +102,15 @@ public class CdpExtractXhrRequests {
         }
 
         public String getRequestUrl() {
-            return requestUrl;
+            return this.requestUrl;
         }
 
         public int getStatus() {
-            return status;
+            return this.status;
         }
 
         public Map<String, List<String>> getHeadersMap() {
-            return headersMap;
+            return this.headersMap;
         }
     }
 

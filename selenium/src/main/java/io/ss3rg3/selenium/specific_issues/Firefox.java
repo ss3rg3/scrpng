@@ -10,7 +10,8 @@ import java.io.File;
 public class Firefox {
 
     /**
-     * <h3 style='color:orange'>You need the apt version</h3>
+     * <h3 style='color:orange'>You need the apt version of Firefox.</h3>
+     * When installed via snap it will not work.
      * See here: https://askubuntu.com/questions/1399383/how-to-install-firefox-as-a-traditional-deb-package-without-snap-in-ubuntu-22/1404401#1404401
      */
     public static void main(String[] args) throws Exception {
