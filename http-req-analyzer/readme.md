@@ -104,4 +104,36 @@ ALPN Protocols: [h2 http/1.1]                             Server Name (SNI):
 === End Client Hello Details ===
 ```
 
-The client hello and headers are widely different, i.e. detectable. So your goal should be to align your HTTP request as much as possible to the one of a browser. Either via proxy or directly in your HTTP client. There are libraries like `tls-client` (available in Go and Python), which do it your you.
+Request from OkHttp (with manipulated headers):
+
+```yaml
+=== Client Hello Details ===                              === HTTP Request Details ===
+Server Name (SNI):                                        Method: GET
+                                                          URL: /
+Supported TLS Versions:                                   Protocol: HTTP/2.0
+ - TLS 1.3 (0x0304)                                       Remote Address: 5.161.94.81:34278
+ - TLS 1.2 (0x0303)
+                                                          Headers:
+Advertised Cipher Suites:                                    Sec-Ch-Ua-Mobile: ?0
+ - TLS_AES_128_GCM_SHA256 (0x1301)                           Accept-Encoding: gzip
+ - TLS_AES_256_GCM_SHA384 (0x1302)                           Accept: text/html,...,*/*;q=0.8
+ - TLS_CHACHA20_POLY1305_SHA256 (0x1303)                     Sec-Ch-Ua: "Chromium";v="116", ... "Google Chrome";v="116"
+ - TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256 (0xC02B)          Sec-Ch-Ua-Platform: Windows
+ - TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 (0xC02F)            Sec-Fetch-Dest: document
+ - TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384 (0xC02C)          Sec-Fetch-Mode: navigate
+ - TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 (0xC030)            Sec-Fetch-Site: cross-site
+ - TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256 (0xCCA9)    Sec-Fetch-User: ?1
+ - TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256 (0xCCA8)      Upgrade-Insecure-Requests: 1
+ - TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xC013)               Accept-Language: en-US,en;q=0.9
+ - TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xC014)               Referer: https://www.google.com/
+ - TLS_RSA_WITH_AES_128_GCM_SHA256 (0x009C)                  User-Agent: Mozilla/5.0 ... Chrome/116.0.0.0 Safari/537.36
+ - TLS_RSA_WITH_AES_256_GCM_SHA384 (0x009D)
+ - TLS_RSA_WITH_AES_128_CBC_SHA (0x002F)                  TLS Connection Details:
+ - TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)                     TLS Version: 304
+                                                             Cipher Suite: 1301
+Supports ALPN: true                                          Server Name (SNI):
+ALPN Protocols: [h2 http/1.1]
+=== End Client Hello Details ===
+```
+
+The client hello and headers of curl and Chrome are widely different, i.e. detectable. So your goal should be to align your HTTP request as much as possible to the one of a browser. Either via proxy or directly in your HTTP client. There are libraries like `tls-client` (available in Go and Python), which do it your you.

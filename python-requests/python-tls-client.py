@@ -6,7 +6,7 @@ session = tls_client.Session(
 )
 
 res = session.get(
-    "https://www.cyberport.de/",
+    "https://www.cyberport.de/",  # Check TLS cipher suites: https://www.howsmyssl.com/
     headers={
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
         "Accept-Language": "en-US,en;q=0.9",
