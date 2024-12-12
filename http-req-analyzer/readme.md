@@ -136,4 +136,4 @@ ALPN Protocols: [h2 http/1.1]
 === End Client Hello Details ===
 ```
 
-The client hello and headers of curl and Chrome are widely different, i.e. detectable. So your goal should be to align your HTTP request as much as possible to the one of a browser. Either via proxy or directly in your HTTP client. There are libraries like `tls-client` (available in Go and Python), which do it your you.
+The client hello and headers of curl and Chrome are widely different, i.e. detectable. Even OkHttp is detectable, although all proper cipher suites match, because it doesn't use GREASE. So your goal should be to align your HTTP request as much as possible to the one of a browser. Either via proxy or directly in your HTTP client. There are libraries like `tls-client` (available in Go and Python), which do it your you.
