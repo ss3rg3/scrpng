@@ -4,6 +4,10 @@
 
 
 
+:red_circle: Obsolete. Use https://tls.peet.ws/api/all - it's the endpoint which they use in https://github.com/bogdanfinn/tls-client/ for testing
+
+
+
 The `run-server.go` runs a HTTP server which prints HTTP config to the console, e.g. shared cipher suites, headers, etc. The program is in Go because the previously used Python lib can't show the "client hello" message for some reason. 
 
 Install Go:
