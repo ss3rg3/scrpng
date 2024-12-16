@@ -12,7 +12,7 @@ class BasicExample {
         ChromeDriver driver = new ChromeDriver(options);
 
 
-        driver.get("http://example.com/");
+        driver.get("https://tls.peet.ws/api/all");
 
         Thread.sleep(120_000);
         driver.quit();
