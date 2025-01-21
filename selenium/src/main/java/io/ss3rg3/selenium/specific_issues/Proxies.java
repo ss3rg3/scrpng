@@ -20,7 +20,7 @@ class Proxies {
         WebDriverUtils.registerProxyCredentials("username", "password", driver);
 
         driver.get("https://whatismyipaddress.com/");
-        // driver.get("https://ipapi.co/");
+        // driver.get("https://api64.ipify.org/?format=json");
 
         Thread.sleep(10000);
 
